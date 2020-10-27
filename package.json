@@ -10,6 +10,7 @@
   "author": "Nikita Bukin <locus2@mail.ru>",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.2.1",
     "webpack-cli": "^4.1.0"
   }
