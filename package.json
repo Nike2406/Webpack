@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nikita Bukin <locus2@mail.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.2.1",
+    "webpack-cli": "^4.1.0"
+  }
 }
