@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((text = 'Hello nyan!') => {
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((text = 'Hello webpack!') => {
   const element = document.createElement('div');
   element.innerHTML = text;
   return element;
