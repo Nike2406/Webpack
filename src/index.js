@@ -1,5 +1,3 @@
-// console.log('Hello!');
-
 import component from './simple-components/dom';
 
 const element = component();

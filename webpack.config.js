@@ -15,6 +15,7 @@ const path = require('path');
 * Promise
 */ 
 
+// Futeure some code
 module.exports = () => {
   return {    
     mode: 'none',
