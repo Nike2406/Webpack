@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config=./scripts/webpack/webpack.config.js"
   },
   "author": "Nikita Bukin <locus2@mail.ru>",
   "license": "ISC",
   "devDependencies": {
+    "app-root-path": "^3.0.0",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^5.0.0-alpha.7",
     "webpack": "^5.2.1",

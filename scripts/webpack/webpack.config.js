@@ -8,6 +8,14 @@ const delay = (timeout = 1000) => {
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 // Добавляем модуль path для отработки аутпута
 const path = require('path');
+
+// Constants 
+const {BUILD_DIRECTORY, PROJECT_ROOT} = require('./constants');
+const cleanOptions = {
+  verbose: true,
+  root: PROJECT_ROOT
+};
+
 /*
 * Тпиы конфигов вебпака:
 * Object
@@ -29,9 +37,10 @@ module.exports = () => {
         template: './static/template.html',
         title: 'Изучаем webpack!'
       }),
-      new CleanWebpackPlugin({
-        dry: true // Симуляия удаления файлов с выводом в консоль  
-      }),
+      new CleanWebpackPlugin(
+        [BUILD_DIRECTORY],
+        cleanOptions // Симуляия удаления файлов с выводом в консоль  
+      )
     ]
   };
 };
