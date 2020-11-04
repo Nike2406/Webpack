@@ -10,7 +10,13 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const path = require('path');
 
 // Constants 
-const {BUILD_DIRECTORY, PROJECT_ROOT} = require('./constants');
+const {
+  BUILD_DIRECTORY, 
+  SOURCE_DIRECTORY, 
+  PROJECT_ROOT
+} = require('./constants');
+
+// Clean options to use
 const cleanOptions = {
   verbose: true,
   root: PROJECT_ROOT
@@ -26,11 +32,12 @@ const cleanOptions = {
 // Futeure some code
 module.exports = () => {
   return {    
+    entry: SOURCE_DIRECTORY,
+    output: {
+      path: BUILD_DIRECTORY
+    },
     mode: 'none',
     devtool: false,
-    output: {
-      path: path.resolve(process.cwd(), 'dist')
-    },
     plugins: [
       // Каждый плагин - это конструктор
       new HtmlWebpackPlugin({
